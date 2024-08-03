@@ -37,5 +37,5 @@
   "firstName": "New Person",
   "lastName": "NPC",
   "email": "npc@gmail.com",
-  "phone": "6778935645",
+  "phone": "6778935645"
 }
