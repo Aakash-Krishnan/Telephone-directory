@@ -1,0 +1,41 @@
+{
+  "contacts": [],
+  "ipStore": {},
+  "phNo": []
+}
+
+
+{
+  "firstName": "Mango",
+  "lastName": "",
+ "email": "mango@gmail.com",
+ "phone": "9067848658"
+}
+
+{
+  "firstName": "Apple",
+  "lastName": "Fruit",
+ "email": "apple@gmail.com",
+ "phone": "90678238658"
+}
+
+{
+  "firstName": "Person1",
+  "lastName": "One",
+ "email": "one@gmail.com",
+ "phone": "9976529965"
+}
+
+{
+  "firstName": "Person2",
+  "lastName": "Two",
+ "email": "two@gmail.com",
+ "phone": "5767329965"
+}
+
+{
+  "firstName": "New Person",
+  "lastName": "NPC",
+  "email": "npc@gmail.com",
+  "phone": "6778935645",
+}
