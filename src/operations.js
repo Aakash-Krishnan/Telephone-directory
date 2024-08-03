@@ -119,11 +119,15 @@ export const removeContact = async (id) => {
     const phNoSet = createHashSet(phNo);
 
     if (contactsMap.has(id)) {
-      const { phone } = contactsMap.delete(id);
-      phNoSet.delete(phone);
+      const deletedContactPhNo = contactsMap.get(id).phone;
+
+      contactsMap.delete(id);
+      phNoSet.delete(deletedContactPhNo);
+
+      const newPhoneNos = [...phNoSet];
       const newContacts = [...contactsMap.values()];
 
-      await writeDB({ ipStore, contacts: newContacts, phNo });
+      await writeDB({ ipStore, contacts: newContacts, phNo: newPhoneNos });
       return { success: "Contact removed", id };
     } else {
       throw new Error("No contact found");
